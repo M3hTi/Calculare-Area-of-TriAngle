@@ -1,0 +1,47 @@
+:root{
+    --primary-color: #1b97df;
+    --hover-color: #1775ac;
+    --border-color: black;
+}
+
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    background-image: url("../images/samurai-warrior-katana-fantasy-art-red-moon-hd-wallpaper-uhdpaper.com-87@0@j.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+.wrapper{
+    backdrop-filter: blur(2px);
+    width: 30%;
+    padding: 6px 8px;
+    border: var(--border-color) 2px solid;
+}
+.base-triangle, .height-triangle{
+    padding-block: 18px;
+    font-weight: bold;
+}
+input{
+    width: 100px;
+}
+.calculate-area{
+    background-color: var(--primary-color);
+    border: none;
+    padding-block: 8px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.calculate-area:hover{
+    background-color: var(--hover-color);
+}
